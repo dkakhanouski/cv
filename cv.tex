@@ -19,12 +19,13 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
 
-\name{Ales Guzik {\it(Ales Huzik)}} % Your name
+\name{Dmitriy Kohanovskiy} % Your name
 % \address{Minsk, Belarus} % Your address
-% \address{+375~29~575-1103 \\ me@aguzik.net} % Your phone number and email
-\address{Minsk, Belarus (currently live in Kiev, Ukraine)} % Your address
-\address{+380~97~033-1145 \\ me@aguzik.net} % Your phone number and email
+% \address{+375~29~577-4376 \\ dmitkoh@gmail.com} % Your phone number and email
+\address{Minsk, Belarus} % Your address
+\address{+375~29~577-4376 \\ dmitkoh@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -34,12 +35,9 @@
 
 \begin{rSection}{Education}
 
-{\bf Belarusian State University of Informatics and Radioelectronics, Minsk} \hfill {\em July 2013} \\ 
+{\bf Belarusian State University of Informatics and Radioelectronics, Minsk} \hfill {\em June 2015} \\ 
 Faculty of Computer Systems and Networks \\
-M.S. in Computer Science \& Software Engineering \smallskip \\
-{\bf Belarusian State University of Informatics and Radioelectronics, Minsk} \hfill {\em July 2012} \\ 
-Faculty of Computer Systems and Networks \\
-B.S. in Systems Engineering \\
+B.S. in Mathematics \& Software Engineering \\
 
 \end{rSection}
 
@@ -50,19 +48,13 @@ B.S. in Systems Engineering \\
 \begin{rSection}{Have experience with}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Operating Systems     & Linux (NixOS, Arch, Debian, CentOS, Ubuntu), Mac OS X \smallskip \\
-Programming Languages & Clojure, Ruby, C, Bash, JavaScript, Perl, Common Lisp, Erlang, \\
-                      & Maude, Factor, Lua, Terra, C++, Python and some others\smallskip \\
-Markup and Typesetting & \LaTeX, HTML, Haml, Slim, CSS, SASS/SCSS, Less, Bootstrap \smallskip \\
-Server technologies   & NixOps, Consul, Docker, Dokku, Chef, Nginx, Apache httpd, \\
-                      & Postfix, Prosody, vsftpd, Squid, Corosync, Pacemaker, DRBD \smallskip \\
-SQL Databases & PostgreSQL, MySQL/MariaDB, SQLite \smallskip \\
-  NoSQL Databases & Datomic/Datascript, Neo4j, OrientDB, MongoDB, Cassandra \smallskip \\
-% Tools & zsh, git, emacs, vim, tmux, gpicker, ctags, the silver searcher, \\
-%       & GNU Global, splint, gdb, strace, valgrind, gprof \smallskip \\
-Programming paradigms & Imperative, Object-oriented (class-based, prototype-based), \\
-                      & Functional, Concatenative (stack-based), Logical (predicate logic, \\
-                      & rewriting logic).
+Operating Systems      & Linux (CentOS, Ubuntu), Windows \smallskip \\
+Programming Languages  & PL/SQL, Python, JavaScript, C\#, C, C++ and some others \smallskip \\
+Markup and Typesetting & HTML, CSS, \LaTeX \smallskip \\
+Server technologies    & Docker, Nginx, Apache httpd \smallskip \\
+SQL Databases          & Oracle 11g/12c, MySQL/MariaDB \smallskip \\
+NoSQL Databases        & Schema.io, InfluxDB \smallskip \\
+Other                  & ELK: Elasticsearch, Logstash, Kibana, Filebeat, Metricbeat \\
 \end{tabular}
 
 \end{rSection}
@@ -73,143 +65,39 @@ Programming paradigms & Imperative, Object-oriented (class-based, prototype-base
 
 \begin{rSection}{Work positions}
 
-\begin{rSubsection}{Filemporium}{July 2015 - Present}{Lead Clojure Developer}{Remote via Upwork}
-\item Setup temporary deplyoment via docker and dokku
-\item Revised architecture in a way that drastically simplified client-side
-  state management and allowed live page update of all active user sessions
-\item Reengineered project build system using boot (previously leiningen were used).
-  Fixed project build time (full recompilation now takes just a couple of minutes
-  instead of an hour). Adjusted project code to work with reloaded workflow.
-\item Documented project structure, project-specific code conventions, technical decisions, troubleshooting, and Amazon S3 project-specific step-by-step configuration guide
-\item Implemented production-ready multiserver setup with zero-downtime deployment using NixOS/NixOps and Consul
-\item Refactored most of the project, implemented lots of functionality and fixed lots of bugs (e.g added
-  config schema validation, cleaned up garbage logging (like {\tt (println "!!! FOO:" x)}) and implemented
-  propper configurable logging throughout the system, implemented chunked file upload with automatic reconnection, etc.)
-\item Interviewed potential candidates
-\item Regularly did code reviews
-\item Did pair programming (to assist others with complicated tasks, to share project knowledge, to get
-  back on track when I'm stuck)
-\item Fired a programmer that have been writing terrible code
+\begin{rSubsection}{LifeTech TurkCell Group, LLC}{June 2017 - August 2017}{Data Analyst}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{Filemporium}{May 2015 - July 2015}{Clojure Developer}{Remote via Upwork}
-\item Automated design updates
-\item Added compile-time template checks to kioo templating library to ensure
-  component correctness after design update
-\item Added support for using arbitrary npm libraries from ClojureScript code (to be
-  able to utilize existing js React components)
-\item Started writing project documentation. Documented actions needed to setup
-  a project, update design, add npm library
-
-% ~
+\begin{rSubsection}{Insoft Engineering}{March 2017 - May 2017}{React Native developer}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{Softswiss Casino Software}{October 2014 - May 2015}{Senior Software Engineer}{Minsk, Belarus}
-\item Implemented integrations with external game providers (CasinoTechnology, Fengaming)
-\item Implemented completely custom design for new customer (HTML/CSS)
-\item Worked on external wallet api implementation
+\begin{rSubsection}{Insoft Engineering}{January 2017 - February 2017}{Data Scientist}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{Rubyroid Labs, LLC}{April 2014 - September 2014}{Senior Software Engineer/Team Leader}{Minsk, Belarus}
-\item Designed application architecture
-\item Managed project development
-\item Did code reviews
-\item Solely implemented some internal services
+\begin{rSubsection}{SRI Infotech}{June 2015 - December 2016}{PL/SQL DB developer}{Remote}
+\item
+% \item \href{https://drive.google.com/file/d/0B256DYrZGsaVZHZJb3FMQ01hVHM/view}{Recommendation}
 \end{rSubsection}
 
-\begin{rSubsection}{Intetics Co.}{July 2013 - April 2014}{Senior Software Engineer}{Minsk, Belarus}
-\item Made fully-automated production server setup
-\item Worked on refactoring legacy codebase
-\item Worked on security-related features (IP whitelisting, XSS testing)
-\item Implemented backend service for mobile apps.
-\item Implemented automatic management of VPN servers DNS rotation
-\item Did code reviews
+\begin{rSubsection}{Insoft Engineering}{June 2015 - December 2016}{PL/SQL DB developer}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{\parbox[t][2em][t]{9cm}{Belarusian State University of Informatics and Radioelectronics}}{February 2013 - January 2014 }{Teaching assistant at Electronic Computing Machines Department (part-time)}{Minsk, Belarus}
-\item Taught first-year students programming in C.
-\item Taught fourth-year students IP networking.
-\item Taught students how to use Git and GitHub.
-\item Together with students formalized grading criteria.
-\item Formalized some code quality metrics.
-\item Regularly reviewed students' code.
-\item Taught Linux for interested students in my spare time.
+\begin{rSubsection}{MW2 Commerce}{October 2014 - May 2015}{Magento developer}{Remote}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{PowerMeMobile, Inc.}{January 2013 - February 2013}{Problem solver}{Minsk, Belarus}
-\item Gave an idea of automating deployment process (new tier deployments may take up to
-  a month of SysAdmin team work).
-\item Implemented initial stages of deployment automation (installing base cluster software,
-  configuring corosync/pacemaker, installing and configuring DRBD and nginx as resource agents) using Chef.
-\item Made entire deployment configurable from a single place (from chef workstation using node attributes).
-\item Got an agreement on opensourcing this efforts.
+\begin{rSubsection}{Insoft Engineering}{October 2014 - May 2015}{Magento developer}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{Altoros Systems, Inc.}{October 2011 - September 2012}{Software Engineer in Ruby department}{Minsk, Belarus}
-\item Proved that custom multisite functionality is a bad idea. Dropped the hacks and refactored application to use rails 3 engines.
-\item Participated in porting internal RightScale services (mostly sinatra+cassandra) to JRuby to utilize native Thrift.
-\item Participated in all stages of design and development on many projects.
+\begin{rSubsection}{Insoft Engineering}{May 2014 - September 2014}{PL/SQL DB developer}{Minsk, Belarus}
+\item
 \end{rSubsection}
 
-\begin{rSubsection}{Itransition, Inc.}{February 2011 - October 2011}{Junior Developer in Ruby department}{Minsk, Belarus}
-\item Solely ported large social gaming engine from Rails 2 to Rails 3.
-\item Initiated using SCSS and Compass, which led to stylesheets development and modification speedup.
-\item Configured production server from scratch and setup automated Capistrano deployment.
-\end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%   NOTES SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Some facts to better understand what kind of person I am}
-  \smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  \item I decided to tie my work to computers when I was 5.
-  \item First program in BASIC at age of 11, first HTML and JavaScript at 12, first program in Pascal at 13.
-  \item I started playing with Linux when I was 14 (it was Mandrake 10 in 2005)
-  \item I use Dvorak keyboard layout
-  \item I use Archlinux with lots of handwritten scripts and i3 tiling window manager as my work environment.
-  \item I tend to automate everything I could.
-  \item I started using Emacs at 2010 and never looked back. Since 2011 I use it with Evil (vim emulation layer)
-  \item I have dozens of personal opensource projects and have contributed to
-        upstream of at least 20 other.
-  \item Some time ago I was passionate about japanese animation, so I learned
-        some japanese and passed an international exam (JLPT4 certificate). I remember myself
-        learning Esperanto and Toki Pona, and now I am learning Lojban.
-  \item I am an active ACM and ACM SIGPLAN member.
-  \item One of my primary interests is programming languages. I am still thinking of one
-        that would be perfectly expressive. I have plans for PhD in that field.
-  \item I write tests very rarely and when I feel I wish to write one, I know that
-    I should search for more simple solution that will be obviously working and not
-    require any iterative validation. I do not believe that writing tons
-    of tests may lead to good system design. More often it leads to design that is hard to change
-    in any meaningful way. Instead of going test-first I go think-first, and don't start writing
-    code until I clearly know what I'm going to write and why.
-  \end{list}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%   INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Growth directions}
-  \smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  \item Programming paradigms and programming languages
-  \item Rewriting logic (Maude system in particular)
-  \item Minimal syntax programming languages: Lisp (Clojure, Common Lisp, Scheme,
-        Qi/Shen), FORTH, Factor, APL, Tcl, Refal, Rebol, Smalltalk
-  \item Programming music (Overtone, Extempore) and visuals (Quil, Processing, Fluxus)
-  \item Learning to draw
-  \item Semantics
-  \item Constructed languages
-  \item Neuroscience
-  \item Statistics and Machine Learning
-  \end{list}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------

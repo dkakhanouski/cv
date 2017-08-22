@@ -1,1 +1,1 @@
-del *.aux *.log *.toc
+del *.aux *.log *.toc *.out
